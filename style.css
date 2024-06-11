@@ -9,17 +9,17 @@ body {
   background-color: #e9edc9;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
 .container {
-  /* margin-top: 250px; */
+  margin-top: 250px;
   width: 350px;
   border: 5px solid #080902;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   height: auto;
-  /* flex-grow: 1; */
 }
 
 input {
@@ -47,7 +47,7 @@ input:focus {
 }
 
 .card-container::-webkit-scrollbar {
-  width: 5px; /* Width of the scrollbar */
+  width: 5px;
 }
 
 .card-container::-webkit-scrollbar-thumb {
@@ -61,4 +61,8 @@ input:focus {
   font-size: 20px;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
+}
+
+.highlight {
+  background-color: yellow;
 }
